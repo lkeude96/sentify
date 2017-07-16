@@ -3,7 +3,7 @@ class CreateSongs < ActiveRecord::Migration
     create_table :songs do |t|
       t.string :spotify_id
       t.string :song_name
-      t.references :genre, index: true, foreign_key: true
+      t.references :genre, index: true
 
       t.timestamps null: false
     end

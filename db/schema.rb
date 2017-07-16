@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170716024958) do
+ActiveRecord::Schema.define(version: 20170716152929) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,5 +21,41 @@ ActiveRecord::Schema.define(version: 20170716024958) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "genres", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "song_tags", force: :cascade do |t|
+    t.integer  "song_id"
+    t.string   "tag_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "song_tags", ["song_id"], name: "index_song_tags_on_song_id", using: :btree
+
+  create_table "songs", force: :cascade do |t|
+    t.string   "spotify_id"
+    t.string   "song_name"
+    t.integer  "genre_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "songs", ["genre_id"], name: "index_songs_on_genre_id", using: :btree
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "current_emotion"
+    t.string   "desired_mood"
+    t.integer  "song_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "users", ["song_id"], name: "index_users_on_song_id", using: :btree
 
 end

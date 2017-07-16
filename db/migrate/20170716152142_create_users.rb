@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :name
       t.string :current_emotion
       t.string :desired_mood
-      t.references :song, index: true, foreign_key: true
+      t.references :song, index: true
 
       t.timestamps null: false
     end
