@@ -30,6 +30,8 @@ July 15 - 16 Univision, San Jose CA
 ### Database Schema
 ![alt text](https://github.com/lkeude96/sentify/blob/master/wireframe/schema.png)
 
+### [Song data](https://docs.google.com/spreadsheets/d/1GI7pmeHrcpy_97X7ibtA0Su-I8hoX99GGh7Z5547aFs/edit?usp=sharing)
+
 ### Technology Stack
     + Ruby on Rails
     + PostgreSQL
