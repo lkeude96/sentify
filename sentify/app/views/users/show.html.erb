@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Current emotion:</strong>
+  <%= @user.current_emotion %>
+</p>
+
+<p>
+  <strong>Desired mood:</strong>
+  <%= @user.desired_mood %>
+</p>
+
+<p>
+  <strong>Song:</strong>
+  <%= @user.song %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

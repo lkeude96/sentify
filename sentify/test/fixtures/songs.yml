@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spotify_id: MyString
+  song_name: MyString
+  genre_id: 
+
+two:
+  spotify_id: MyString
+  song_name: MyString
+  genre_id: 
