@@ -13,11 +13,27 @@
   <tbody>
     <% @emotions.each do |emotion| %>
       <tr>
+        <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title"><%= emotion.name %></span>
+              <td><%= link_to 'Show', emotion %></td>
+        <td><%= link_to 'Edit', edit_emotion_path(emotion) %></td>
+        <td><%= link_to 'Destroy', emotion, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+     <!--  </ --><!-- div>
         <td><%= emotion.name %></td>
         <td><%= link_to 'Show', emotion %></td>
         <td><%= link_to 'Edit', edit_emotion_path(emotion) %></td>
         <td><%= link_to 'Destroy', emotion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      </tr> -->
     <% end %>
   </tbody>
 </table>
