@@ -1,5 +1,8 @@
-# sentify
+# Sentify
 Sentify is a recommendation engine where Code2040 Fellows can input their emotional state and retrieve a song selection based on input from our trained data set and input from other code2040 fellows. 
+
+# Presentation
+[Youtube](https://youtu.be/_d1aFxSOrvo)
 
 # History
 As code2040 fellows we are black and latino computer science students working in top tier technology companies in large cities around the US. We are marginalized in most of the spaces we enter and have to find coping mechanisms to deal with our emotions. We found that music is a great way to deal with and process our feelings but there are a lot of issues with the recommendation engines currently available.
